@@ -2,9 +2,9 @@ import tkinter as tk
 import bencher
 
 def update_scoretime(score):
-    cpu_label.config(text=f"CPU test: {score[2]:.4f} seconds")
-    memory_label.config(text=f"Memory test: {score[0]:.4f} seconds")
-    disk_label.config(text=f"Disk test: {score[1]:.4f} seconds")
+    cpu_label.config(text=f"CPU test: {10000/score[2]:.4f} score")
+    memory_label.config(text=f"Memory test: {10000/score[0]:.4f} score")
+    disk_label.config(text=f"Disk test: {10000/score[1]:.4f} score")
 
 def benchmark():
     time_usage = bencher.benching() #(mem time, disk time, cpu time)
