@@ -13,13 +13,13 @@ def fibo(n):
 
 def cputest():
     print('cpu in testing')
-    for i in range (40):
+    for i in range (43):
         fibo(i)
 
 def memtest():
     print('mem in testing')
     num = []
-    round = 100000
+    round = 700000
     for i in range (0,round,1):
         num.append(int(random.randint(0,9)))
     for i in range (2,round,1):
